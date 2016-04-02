@@ -26,9 +26,9 @@
 	<string></string>
 	<key>OPFilters</key>
 	<dict>
-		<key>Executables</key>
+		<key>Bundles</key>
 		<array>
-			<string>Dock</string>
+			<string>com.apple.audio.CoreAudio</string>
 		</array>
 	</dict>
 </dict>
