@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA09D7D71CAF698C00F798B0 /* ParasiteRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA09D7D61CAF698C00F798B0 /* ParasiteRuntime.framework */; };
+		FA09D7DA1CAF698C00F798B0 /* FreshPaint.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09D7D91CAF698C00F798B0 /* FreshPaint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA09D7D31CAF698C00F798B0 /* FreshPaint.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshPaint.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA09D7D61CAF698C00F798B0 /* ParasiteRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParasiteRuntime.framework; path = Library/Frameworks/ParasiteRuntime.framework; sourceTree = DEVELOPER_DIR; };
+		FA09D7D91CAF698C00F798B0 /* FreshPaint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshPaint.m; sourceTree = "<group>"; };
+		FA09D7DB1CAF698C00F798B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA09D7D01CAF698C00F798B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA09D7D71CAF698C00F798B0 /* ParasiteRuntime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA09D7CA1CAF698C00F798B0 = {
+			isa = PBXGroup;
+			children = (
+				FA09D7D81CAF698C00F798B0 /* FreshPaint */,
+				FA09D7D51CAF698C00F798B0 /* Frameworks */,
+				FA09D7D41CAF698C00F798B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA09D7D41CAF698C00F798B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA09D7D31CAF698C00F798B0 /* FreshPaint.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA09D7D51CAF698C00F798B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA09D7D61CAF698C00F798B0 /* ParasiteRuntime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA09D7D81CAF698C00F798B0 /* FreshPaint */ = {
+			isa = PBXGroup;
+			children = (
+				FA09D7D91CAF698C00F798B0 /* FreshPaint.m */,
+				FA09D7DB1CAF698C00F798B0 /* Info.plist */,
+			);
+			path = FreshPaint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA09D7D21CAF698C00F798B0 /* FreshPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA09D7DE1CAF698C00F798B0 /* Build configuration list for PBXNativeTarget "FreshPaint" */;
+			buildPhases = (
+				FA09D7CF1CAF698C00F798B0 /* Sources */,
+				FA09D7D01CAF698C00F798B0 /* Frameworks */,
+				FA09D7D11CAF698C00F798B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshPaint;
+			productName = FreshPaint;
+			productReference = FA09D7D31CAF698C00F798B0 /* FreshPaint.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA09D7CB1CAF698C00F798B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ParasiteTeam;
+				TargetAttributes = {
+					FA09D7D21CAF698C00F798B0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FA09D7CE1CAF698C00F798B0 /* Build configuration list for PBXProject "FreshPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA09D7CA1CAF698C00F798B0;
+			productRefGroup = FA09D7D41CAF698C00F798B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA09D7D21CAF698C00F798B0 /* FreshPaint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA09D7D11CAF698C00F798B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA09D7CF1CAF698C00F798B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA09D7DA1CAF698C00F798B0 /* FreshPaint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA09D7DC1CAF698C00F798B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA09D7DD1CAF698C00F798B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA09D7DF1CAF698C00F798B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				INFOPLIST_FILE = FreshPaint/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parasite.FreshPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FA09D7E01CAF698C00F798B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				INFOPLIST_FILE = FreshPaint/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parasite.FreshPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA09D7CE1CAF698C00F798B0 /* Build configuration list for PBXProject "FreshPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA09D7DC1CAF698C00F798B0 /* Debug */,
+				FA09D7DD1CAF698C00F798B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA09D7DE1CAF698C00F798B0 /* Build configuration list for PBXNativeTarget "FreshPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA09D7DF1CAF698C00F798B0 /* Debug */,
+				FA09D7E01CAF698C00F798B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA09D7CB1CAF698C00F798B0 /* Project object */;
+}
