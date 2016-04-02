@@ -12,14 +12,12 @@
 extern int AudioDeviceDuck(int arg0, int arg1);
 
 PSHook2(int, AudioDeviceDuck, int, arg0, int, arg1) {
-    NSLog(@"SoundTime: Device Duck");
     return 0;
 }
 
 static int (*HALDuck)(float, AudioTimeStamp const *, float);
 
 PSHook3(int, HALDuck, float, arg1, AudioTimeStamp const *, arg2, float, arg3) {
-    NSLog(@"HALDUCK");
     return 0;
 }
 
