@@ -24,7 +24,7 @@
 	<string>Copyright © 2016 Timm Kandziora. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
-	<key>OPFilters</key>
+	<key>PSFilters</key>
 	<dict>
 		<key>Executables</key>
 		<array>

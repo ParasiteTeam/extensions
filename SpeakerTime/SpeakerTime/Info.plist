@@ -24,7 +24,7 @@
 	<string>Copyright © 2016 ParasiteTeam. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
-	<key>OPFilters</key>
+	<key>PSFilters</key>
 	<dict>
 		<key>Bundles</key>
 		<array>
