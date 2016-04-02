@@ -28,6 +28,7 @@ ZKSwizzleInterface(_FPFacet, CUIThemeFacet, NSObject)
     }
     return ZKOrig(unsigned long long, name, bndle, err);
 }
+@end
 
 PSInitialize {
     // Copy SystemAppearance.bundle to /Library/Parasite/CarThemes.bundle
@@ -37,4 +38,3 @@ PSInitialize {
     CarBundle = [NSBundle bundleWithPath:@"/Library/Parasite/CarThemes.bundle"];
 }
 
-@end
