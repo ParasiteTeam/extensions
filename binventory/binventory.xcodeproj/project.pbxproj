@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA9B12151CB34BDA005FAC9F /* binventory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B12141CB34BDA005FAC9F /* binventory.m */; };
+		FA9B121F1CB34CC9005FAC9F /* SGDirWatchDog_LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA9B121C1CB34CC9005FAC9F /* SGDirWatchDog_LICENSE.txt */; };
+		FA9B12201CB34CC9005FAC9F /* SGDirWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B121E1CB34CC9005FAC9F /* SGDirWatchdog.m */; };
+		FA9B12231CB34D4D005FAC9F /* ParasiteRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9B12221CB34D4D005FAC9F /* ParasiteRuntime.framework */; };
+		FAB517F71CB352F700A7A58B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB517F61CB352F700A7A58B /* CoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA9B120E1CB34BDA005FAC9F /* binventory.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = binventory.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9B12141CB34BDA005FAC9F /* binventory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = binventory.m; sourceTree = "<group>"; };
+		FA9B12161CB34BDA005FAC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9B121C1CB34CC9005FAC9F /* SGDirWatchDog_LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGDirWatchDog_LICENSE.txt; sourceTree = "<group>"; };
+		FA9B121D1CB34CC9005FAC9F /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDirWatchdog.h; sourceTree = "<group>"; };
+		FA9B121E1CB34CC9005FAC9F /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDirWatchdog.m; sourceTree = "<group>"; };
+		FA9B12211CB34D28005FAC9F /* ECStatusLabelDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECStatusLabelDescription.h; sourceTree = "<group>"; };
+		FA9B12221CB34D4D005FAC9F /* ParasiteRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParasiteRuntime.framework; path = ../../../../../../Library/Frameworks/ParasiteRuntime.framework; sourceTree = "<group>"; };
+		FAB517F61CB352F700A7A58B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9B120B1CB34BDA005FAC9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB517F71CB352F700A7A58B /* CoreServices.framework in Frameworks */,
+				FA9B12231CB34D4D005FAC9F /* ParasiteRuntime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9B12051CB34BDA005FAC9F = {
+			isa = PBXGroup;
+			children = (
+				FA9B12131CB34BDA005FAC9F /* binventory */,
+				FA9B12101CB34BDA005FAC9F /* Frameworks */,
+				FA9B120F1CB34BDA005FAC9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9B120F1CB34BDA005FAC9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B120E1CB34BDA005FAC9F /* binventory.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9B12101CB34BDA005FAC9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB517F61CB352F700A7A58B /* CoreServices.framework */,
+				FA9B12221CB34D4D005FAC9F /* ParasiteRuntime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9B12131CB34BDA005FAC9F /* binventory */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B12211CB34D28005FAC9F /* ECStatusLabelDescription.h */,
+				FA9B121C1CB34CC9005FAC9F /* SGDirWatchDog_LICENSE.txt */,
+				FA9B121D1CB34CC9005FAC9F /* SGDirWatchdog.h */,
+				FA9B121E1CB34CC9005FAC9F /* SGDirWatchdog.m */,
+				FA9B12141CB34BDA005FAC9F /* binventory.m */,
+				FA9B12161CB34BDA005FAC9F /* Info.plist */,
+			);
+			path = binventory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9B120D1CB34BDA005FAC9F /* binventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9B12191CB34BDA005FAC9F /* Build configuration list for PBXNativeTarget "binventory" */;
+			buildPhases = (
+				FA9B120A1CB34BDA005FAC9F /* Sources */,
+				FA9B120B1CB34BDA005FAC9F /* Frameworks */,
+				FA9B120C1CB34BDA005FAC9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = binventory;
+			productName = binventory;
+			productReference = FA9B120E1CB34BDA005FAC9F /* binventory.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9B12061CB34BDA005FAC9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexander Zielenski";
+				TargetAttributes = {
+					FA9B120D1CB34BDA005FAC9F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FA9B12091CB34BDA005FAC9F /* Build configuration list for PBXProject "binventory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA9B12051CB34BDA005FAC9F;
+			productRefGroup = FA9B120F1CB34BDA005FAC9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9B120D1CB34BDA005FAC9F /* binventory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9B120C1CB34BDA005FAC9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B121F1CB34CC9005FAC9F /* SGDirWatchDog_LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9B120A1CB34BDA005FAC9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B12201CB34CC9005FAC9F /* SGDirWatchdog.m in Sources */,
+				FA9B12151CB34BDA005FAC9F /* binventory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA9B12171CB34BDA005FAC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA9B12181CB34BDA005FAC9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA9B121A1CB34BDA005FAC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = binventory/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexzielenski.binventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FA9B121B1CB34BDA005FAC9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = binventory/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexzielenski.binventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9B12091CB34BDA005FAC9F /* Build configuration list for PBXProject "binventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B12171CB34BDA005FAC9F /* Debug */,
+				FA9B12181CB34BDA005FAC9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9B12191CB34BDA005FAC9F /* Build configuration list for PBXNativeTarget "binventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B121A1CB34BDA005FAC9F /* Debug */,
+				FA9B121B1CB34BDA005FAC9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9B12061CB34BDA005FAC9F /* Project object */;
+}
