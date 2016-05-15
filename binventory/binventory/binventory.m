@@ -22,50 +22,19 @@ ZKSwizzleInterface(DKTrashTile, DOCKTrashTile, NSObject)
 @implementation DKTrashTile
 
 - (void)dk_updateCount {
-    NSUInteger x = 0;
+    long x = 0;
     
-    for (NSURL *url in Trashes) {
-        FSRef	ref;
-        CFURLGetFSRef((CFURLRef)url, &ref);
-        FSCatalogInfo	catInfo;
-
-        OSErr	err	= FSGetCatalogInfo(&ref, kFSCatInfoValence, &catInfo, NULL, NULL, NULL);
-        if (err == noErr)
-            x += catInfo.valence;
-        
+    for (NSURL *url in Trashes)
+    {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/.DS_Store", url.path]])
+            x -= 1;
+        x += [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[url path] error:nil] count];
     }
     
-    if (x == 0)
+    if (x <= 0)
         [self removeStatusLabelForType:1];
     else
         [self setStatusLabel:[[ZKClass(ECStatusLabelDescription) alloc] initWithDefaultPositioningAndString:[NSString stringWithFormat:@"%lu", (unsigned long)x]] forType:1];
-}
-
-- (void)resetTrashIcon {
-    ZKOrig(void);
-    [self dk_updateCount];
-}
-
-- (void)changeState:(BOOL)arg1 {
-    if (!watchdogs) {
-        watchdogs = [[NSMutableArray alloc] init];
-        Trashes = [[NSFileManager defaultManager] URLsForDirectory:NSTrashDirectory inDomains:NSUserDomainMask];
-        
-        
-        __weak DKTrashTile *weakSelf = self;
-        for (NSURL *url in Trashes) {
-            SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:url.path
-                                                                   update:^{
-                                                                       [weakSelf dk_updateCount];
-                                                                   }];
-            [watchDog start];
-            [watchdogs addObject:watchDog];
-        }
-
-        [self dk_updateCount];
-    }
-    
-    ZKOrig(void, arg1);
 }
 
 - (void)dealloc {
@@ -79,3 +48,44 @@ ZKSwizzleInterface(DKTrashTile, DOCKTrashTile, NSObject)
 }
 
 @end
+
+static DKTrashTile *myTile = nil;
+
+ZKSwizzleInterface(DKTile, Tile, NSObject)
+@implementation DKTile
+
+- (void)updateRect
+{
+    ZKOrig(void);
+    if (myTile == nil)
+        if ([self.className isEqualToString:@"DOCKTrashTile"])
+            myTile = (DKTrashTile*)self;
+}
+
+@end
+
+PSInitialize {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        /* Wait for the tile to be found */
+        while (myTile == nil)
+            usleep(100000);
+        
+        /* Set up watchdogs */
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"binventory: settting up watchdogs...");
+            watchdogs = [[NSMutableArray alloc] init];
+            Trashes = [[NSFileManager defaultManager] URLsForDirectory:NSTrashDirectory inDomains:NSUserDomainMask];
+            
+            for (NSURL *url in Trashes) {
+                SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:url.path
+                                                                       update:^{
+                                                                           [myTile dk_updateCount];
+                                                                       }];
+                [watchDog start];
+                [watchdogs addObject:watchDog];
+            }
+            [myTile dk_updateCount];
+            NSLog(@"binventory: loaded...");
+        });
+    });
+}
