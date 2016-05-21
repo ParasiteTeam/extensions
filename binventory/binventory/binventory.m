@@ -22,13 +22,20 @@ ZKSwizzleInterface(DKTrashTile, DOCKTrashTile, NSObject)
 @implementation DKTrashTile
 
 - (void)dk_updateCount {
-    long x = 0;
+    NSUInteger x = 0;
     
     for (NSURL *url in Trashes)
     {
+        FSRef	ref;
+        CFURLGetFSRef((CFURLRef)url, &ref);
+        FSCatalogInfo	catInfo;
+        
+        OSErr	err	= FSGetCatalogInfo(&ref, kFSCatInfoValence, &catInfo, NULL, NULL, NULL);
+        if (err == noErr)
+            x += catInfo.valence;
+        
         if ([[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/.DS_Store", url.path]])
             x -= 1;
-        x += [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[url path] error:nil] count];
     }
     
     if (x <= 0)
@@ -72,10 +79,9 @@ PSInitialize {
         
         /* Set up watchdogs */
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"binventory: settting up watchdogs...");
+            NSLog(@"binventory: setting up watchdogs...");
             watchdogs = [[NSMutableArray alloc] init];
             Trashes = [[NSFileManager defaultManager] URLsForDirectory:NSTrashDirectory inDomains:NSUserDomainMask];
-            
             for (NSURL *url in Trashes) {
                 SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:url.path
                                                                        update:^{
